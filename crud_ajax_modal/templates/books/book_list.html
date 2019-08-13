@@ -1,15 +1,23 @@
 {% extends 'base1.html' %}
 {% load static %}
 {% block content %}
-<h1 class="page-header">Books</h1>
-
-<!-- BUTTON TO TRIGGER THE ACTION -->
+<!-- <h1 class="page-header">Books</h1>
 <p>
     <button type="button" class="btn btn-primary js-create-book">
         <span class="glyphicon glyphicon-plus"></span>
         New book
     </button>
+</p> -->
+
+<h1 class="page-header">Books</h1>
+
+<p>
+    <button type="button" class="btn btn-primary js-create-book" data-url="{% url 'book_create' %}">
+        <span class="glyphicon glyphicon-plus"></span>
+        New book
+    </button>
 </p>
+
 
 
 <!-- <table class="table" id="book-table"> -->
@@ -39,8 +47,9 @@
         <div class="modal-content">
         </div>
     </div>
-    {% endblock content %}
+</div>
+{% endblock content %}
 
-    {% block javascript %}
-    <script src="{% static 'js/books.js' %}"></script>
-    {% endblock javascript %}
+{% block javascript %}
+<script src="{% static 'js/books.js' %}"></script>
+{% endblock javascript %}
