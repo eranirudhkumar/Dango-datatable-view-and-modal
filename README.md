@@ -1,4 +1,4 @@
-Example project for: https://bitbucket.org/pigletto/django-datatables-view
+Example project for: https://bitbucket.org/pigletto/django-datatables-view or https://github.com/pivotal-energy-solutions/django-datatable-view/
 
 Installation:
 
